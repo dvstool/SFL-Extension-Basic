@@ -1,12 +1,33 @@
-﻿{
-  "manifest_version": 3,
-  "name": "Sunflower Tools Basic",
-  "version": "0.1.0",
-  "description": "Read-only map overview and ready notifications for Sunflower Land.",
-  "permissions": ["sidePanel", "tabs", "scripting", "storage", "alarms", "notifications"],
-  "host_permissions": ["https://sunflower-land.com/*"],
-  "action": { "default_title": "Open Sunflower Tools Basic", "default_icon": "icons/sunflower-tools-icon.png" },
-  "icons": { "16": "icons/sunflower-tools-icon.png", "32": "icons/sunflower-tools-icon.png", "48": "icons/sunflower-tools-icon.png", "128": "icons/sunflower-tools-icon.png" },
-  "background": { "service_worker": "background.js" },
-  "side_panel": { "default_path": "sidepanel/sidepanel.html" }
+{
+    "manifest_version":  3,
+    "name":  "Sunflower Tools Basic",
+    "version":  "0.1.0",
+    "description":  "Read-only map overview and ready notifications for Sunflower Land.",
+    "permissions":  [
+                        "sidePanel",
+                        "tabs",
+                        "scripting",
+                        "storage",
+                        "alarms",
+                        "notifications"
+                    ],
+    "host_permissions":  [
+                             "https://sunflower-land.com/*"
+                         ],
+    "action":  {
+                   "default_title":  "Open Sunflower Tools Basic",
+                   "default_icon":  "icons/sunflower-tools-icon.png"
+               },
+    "icons":  {
+                  "16":  "icons/sunflower-tools-icon.png",
+                  "32":  "icons/sunflower-tools-icon.png",
+                  "48":  "icons/sunflower-tools-icon.png",
+                  "128":  "icons/sunflower-tools-icon.png"
+              },
+    "background":  {
+                       "service_worker":  "background.js"
+                   },
+    "side_panel":  {
+                       "default_path":  "sidepanel/sidepanel.html"
+                   }
 }
