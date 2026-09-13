@@ -1,0 +1,22 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sunflower Tools Basic</title>
+    <link rel="stylesheet" href="sidepanel.css">
+  </head>
+  <body>
+    <main class="panel-shell">
+      <header class="app-header">
+        <div class="brand"><img src="../icons/sunflower-tools-icon.png" alt="Sunflower Tools"><div><h1>Sunflower Tools</h1><p>Basic Viewer</p></div></div>
+        <button id="reload-extension" class="icon-button" title="Reload extension" aria-label="Reload extension">↻</button>
+      </header>
+      <section id="connection-card" class="card connection-card"><h2>Connect to Sunflower Land</h2><p>Open the game in this browser, then connect this panel.</p><button id="connect-button" class="primary-button">Connect game</button><p id="connection-status" class="status-text" role="status"></p></section>
+      <section id="overview-card" class="card hidden"><div class="section-title"><h2>Map overview</h2><button id="scan-button" class="small-button">Scan map</button></div><p id="scan-status" class="status-text">Scan the map to view its current status.</p><div id="map-summary" class="summary-grid"></div></section>
+      <section id="settings-card" class="card"><div class="section-title"><h2>Settings</h2></div><label class="toggle-row" for="ready-notifications"><span><strong>Ready notifications</strong><small>Receive notifications for scanned timers.</small></span><input id="ready-notifications" type="checkbox" checked></label></section>
+      <section class="card log-card"><div class="section-title"><h2>Activity</h2><button id="clear-log" class="text-button">Clear</button></div><div id="panel-log" aria-live="polite"></div></section>
+    </main>
+    <script src="sidepanel.js"></script>
+  </body>
+</html>
